@@ -1,3 +1,5 @@
+// Level 1
+
 // 1 Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
 const challenge = '30 Days Of JavaScript'
 // 2 Print the string on the browser console using console.log()
@@ -20,7 +22,7 @@ console.log(splitChallenge)
 // 10. Split the string 30 Days Of JavaScript at the space using split() method
 console.log(challenge.split(' '))
 // 11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-const s = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+let s = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 console.log(s.split(', '))
 // 12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
 console.log(challenge.replace('JavaScript', 'Python'))
@@ -53,3 +55,66 @@ merge = merge.concat(' JavaScript')
 console.log(merge)
 // 25. Use repeat() method to print 30 Days Of JavaScript 2 times
 console.log(challenge.repeat(2))
+
+// Level 2
+
+// 1 print quote with escapes
+console.log('The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.')
+// 2 print other quote with escapes
+console.log('\"Love is not patronizing and charity isn\'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead.\"')
+
+// 3
+let v = '10'
+console.log(+v == 10)
+
+// 4
+v = '9.8'
+console.log(Math.ceil(parseFloat(v)) == 10)
+
+// 5
+console.log('python'.includes('on') && 'jargon'.includes('on'))
+
+// 6
+console.log('I hope this course is not full of jargon.'.includes('jargon'))
+
+// 7
+let num = Math.random() * 100
+
+// 8
+num = Math.random() * 50 + 50
+
+// 9 
+num = Math.random() * 255
+
+// 10
+s = 'JavaScript'
+console.log(s[Math.floor(Math.random() * s.length)])
+
+// 11
+console.log(`1\t1\t1\t1\t1\t\n2\t1\t2\t4\t8\t\n3\t1\t3\t9\t27\t\n4\t1\t4\t16\t64\t\n5\t1\t5\t25\t125\t`)
+
+// 12
+// substr() is deprecated, so use substring()
+const target = 'because because because'
+console.log(phrase.substring(0, phrase.indexOf(target) - 1) + phrase.substring(phrase.indexOf(target) + target.length))
+
+// Level 3
+
+// 1
+let sentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+console.log(sentence.match(/love/gi))
+
+// 2
+console.log(phrase.match(/because/gi))
+
+// 3
+sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+sentence = sentence.replace(/[^a-zA-Z0-9.? -]/g, '')
+console.log(sentence)
+
+// 4
+s = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+const monthly = +s.substring(9, 13)
+const bonus = +s.substring(42, 47)
+const courseMonthly = +s.substring(67, 72)
+console.log(`Total annual income: ${(monthly + courseMonthly) * 12 + bonus}`)

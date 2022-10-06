@@ -27,15 +27,15 @@ console.log(date.getTime())
 // Level 2
 
 // // 1
-// // const base = parseInt(prompt('Enter base of triangle'))
-// // const height = parseInt(prompt('Enter height of triangle'))
-// alert(`The area of the triangle is ${base * height / 2}.`)
+const base = parseInt(prompt('Enter base of triangle'))
+const height = parseInt(prompt('Enter height of triangle'))
+alert(`The area of the triangle is ${base * height / 2}.`)
 
-// // 2
-// // const a = parseInt(prompt('Enter side a'))
-// // const b = parseInt(prompt('Enter side b'))
-// // const c = parseInt(prompt('Enter side c'))
-// alert(`The perimeter of the triangle is ${a+b+c}`)
+// 2
+const a = parseInt(prompt('Enter side a'))
+const b = parseInt(prompt('Enter side b'))
+const c = parseInt(prompt('Enter side c'))
+alert(`The perimeter of the triangle is ${a+b+c}`)
 
 // Skipped 3, 4, 5, too similar to 1 and 2
 // 6
@@ -44,14 +44,14 @@ const p2 = [6, 10]
 console.log(`Slope between ${p1} and ${p2}: ${(p2[1] - p1[1]) / (p2[0] - p1[0])}`)
 
 // 13
-// const birthYear = prompt('Enter birth year:')
-// const currentYear = new Date().getFullYear()
-// age = currentYear - birthYear
-// if (birthYear - currentYear >= 18) {
-//     console.log(`You are ${age}. You are old enough to drive.`)
-// } else {
-//     console.log(`You are ${age}. You will be allowed to drive in ${18 - age} years.`)
-// }
+const birthYear = prompt('Enter birth year:')
+const currentYear = new Date().getFullYear()
+age = currentYear - birthYear
+if (birthYear - currentYear >= 18) {
+    console.log(`You are ${age}. You are old enough to drive.`)
+} else {
+    console.log(`You are ${age}. You will be allowed to drive in ${18 - age} years.`)
+}
 
 // 15
 console.log(date.toISOString().substring(0,10));

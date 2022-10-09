@@ -34,6 +34,9 @@ anywhereWord.onclick = () => {
 }
 sort.onclick = () => {
     listAtoZ = !listAtoZ
+    sortIcon.classList.toggle('fa-arrow-down-a-z')
+    sortIcon.classList.toggle('fa-arrow-down-z-a')
+    updateCountries()
 }
 
 function updateCountries() {

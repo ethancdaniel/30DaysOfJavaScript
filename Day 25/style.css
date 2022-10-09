@@ -1,0 +1,36 @@
+* {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+canvas {
+    width: 1000px;
+}
+
+body {
+    margin: auto; 
+    text-align: center;
+    background-color: #F9F7F3;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+button {
+    border: none;
+    background-color: #0FA3B1;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.chart-container {
+    margin: auto;
+    width: 80%;
+}
+
+.graph-title {
+    font-weight: 400;
+}

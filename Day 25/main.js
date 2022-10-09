@@ -9,6 +9,9 @@ populationBtn.onclick = mostPopulatedCountries
 const languageBtn = document.querySelector('button.languages')
 languageBtn.onclick = mostCommonLanguages
 const graphTitle = document.querySelector('.graph-title')
+const subtitle = document.querySelector('.subtitle')
+subtitle.textContent = `Currently, we have ${countries_data.length} countries`
+
 function mostPopulatedCountries() {
     graphTitle.textContent = '10 Most Populated Countries in the World'
     const res = countries_data.sort((a, b) => {

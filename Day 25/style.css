@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
 canvas {
@@ -15,6 +16,7 @@ body {
 header h2 {
     font-weight: 400;
     font-size: 32px;
+    margin: 20px 0px 8px 0px;
 }
 
 button {
@@ -24,6 +26,7 @@ button {
     padding: 10px 13px;
     border-radius: 5px;
     font-size: 1em;
+    margin: 15px 3px 15px 3px;
 }
 
 .chart-container {
@@ -33,4 +36,5 @@ button {
 
 .graph-title {
     font-weight: 400;
+    margin: 20px 0px 8px 0px;
 }

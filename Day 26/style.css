@@ -1,0 +1,16 @@
+.countries-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.country {
+    width: fit-content;
+    background-color: red;
+    color:blue;
+}
+
+header {
+    text-align: center;
+    margin: 120px;
+}

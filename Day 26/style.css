@@ -1,16 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    color: white;
+}
+
+input {
+    color: black;
+    border-radius: 100px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+h1 {
+    letter-spacing: 10px;
+    color: white;
+}
+
+body {
+    background-color: #FFFFE3;
+}
+
+button {
+    background-color: #895BE5;
+    padding: 15px 12px;
+    margin: 20px 1px;
+    border: none;
+    font-size: 12px;
+}
+
+.active-btn, button:hover {
+    background-color: #501CAA;
+    cursor: pointer;
+}
+header {
+    height: 500px;
+    background-image: 
+        linear-gradient(rgba(4, 13, 46, 0.3), 
+        rgba(4, 13, 46, 0.7)),
+        url('./images/globe-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+}
+
+.header-items {
+    text-align: center;
+    margin: auto;
+    padding: 200px 0px;
+}
+
 .countries-wrapper {
+    margin: auto;
+    padding: 65px 100px;
+    max-width: 1000px;
     display: flex;
-    gap: 10px;
+    gap: 10px 35px;
     flex-wrap: wrap;
 }
 
-.country {
-    width: fit-content;
-    background-color: red;
-    color:blue;
+.country-count {
+    font-weight: bold !important;
 }
 
-header {
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     text-align: center;
-    margin: 120px;
+    width: 108px;
+    height: 115px;
+    opacity: 1;
+    border-radius: 3px;
+    /* use linear gradient to create semi-transparent color layer over background image */
+    background-image: 
+        linear-gradient(rgba(4, 13, 46, 0.3), 
+        rgba(4, 13, 46, 0.7)),
+        url('./images/map_image.jpg');
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 13px;
 }
+
+.search {
+    color: #FCEC52;
+}
+
+.num-results {
+    color: #59F8E8;
+}
+

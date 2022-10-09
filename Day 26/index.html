@@ -4,29 +4,31 @@
 <head>
 	<title>Search for Countries</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
-        <h1>WORLD COUNTRIES LIST</h1>
-        <h4 class="country-count"></h4>
-        <p class="search-info"></p>
-        <div>
-            <button class="btn-start">STARTING WORD</button>
-            <button class="btn-anywhere">SEARCH WITH ANY WORD</button>
-            <button class="btn-sort">
-                <i class="fa-solid fa-arrow-down-a-z i-sort"></i>
-            </button>
-        </div>
-        <div>
-            <input type="text" id="searchInput">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="header-items">
+            <h1>WORLD COUNTRIES LIST</h1>
+            <h4 class="country-count"></h4>
+            <p class="search-info"></p>
+            <div class="buttons">
+                <button class="btn-start">STARTING WORD</button>
+                <button class="btn-anywhere">SEARCH WITH ANY WORD</button>
+                <button class="btn-sort">
+                    <i class="fa-solid fa-arrow-down-a-z i-sort"></i>
+                </button>
+            </div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Search for a country...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
     </header>
-
     <div class="countries-wrapper"></div>
-
 	<script type="module" src="main.js"></script>
 
 </body>
